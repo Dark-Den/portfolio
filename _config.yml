@@ -1,7 +1,6 @@
 lang: en
 # EDIT THE VARIABLES ACCORDINGLY
 title: Rajan Yadav
-avatar: "https://i.postimg.cc/VvzR1Jdb/Profile-Picture-Photo.jpg"
 email: mail.rajanydv@gmail.com
 description: >-
   A core oriented frontend developer perplexing vision through UI/UX sometimes boggling in podcasts xD!
@@ -94,6 +93,7 @@ theme: nuboard-theme
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jekyll-seo-tag
   # - jekyll-postcss
 
 # postcss:

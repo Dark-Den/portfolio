@@ -7,20 +7,19 @@ layout: default
             About Me
         </h1>
     </div>
-    <div class="flex flex-col md:flex-row justify-center p-2 gap-2 items-center">
-        <div class="w-[192px] my-5 origin-bottom -rotate-6 shadow-xl flex-2 h-fit p-2">
-            <img class="img-fluid object-fit img-responsive" alt="image" src="{{site.avatar}}"
-                style="margin: 0 auto; max-width: 10em;">
-            <h5 class="text-center mt-3"><a href="../resume.pdf" class="text-blue-300 underline">View Resume</a></h5>
+    <div class="flex flex-col justify-center p-2 gap-2 items-center">
+        <div class="flex gap-1">
+            <h1 class="text-center text-xl">Hi! I'm {{site.title}}</h1>
+            <img class="emoji h-8" title=":wave:" alt=":wave:"
+                src="https://github.githubassets.com/images/icons/emoji/unicode/1f44b.png">
         </div>
-        <div class="p-3 flex-1 max-w-xl">
-            Hi, I am Rajan Yadav pursuing my Bachelors in Engineering in Electronics and Telecommunication from Army
-            Institute
-            of Technology.
-            Considering me a keen react enthusiast<br> who finds thrill in frontend development shall be a good
-            judgement. I take on projects, cast them to the precise way, then adore it through UI/UX and the result is a
-            blend of fiery codes with soulful design giving life to a wholesome different dimension.
-            <br>
+        <div class="p-3 flex-1 text-center max-w-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, adipisci eligendi cum nobis voluptatum
+            delectus consectetur quisquam? Sit perferendis dicta tempore asperiores ex natus? Aperiam, odit rerum? Amet,
+            labore ratione!
+        </div>
+        <div class="w-[192px] origin-bottom -rotate-6 shadow-xl flex-2 h-fit p-2">
+            <h5 class="text-center mt-3"><a href="../resume.pdf" class="text-blue-300 underline">View Resume</a></h5>
         </div>
     </div>
 </section>
@@ -64,8 +63,8 @@ layout: default
 <section class="pt-5">
     <h1 class="mt-3 text-center text-3xl font-[oswald]">Get in Touch</h1>
     <div class="text-center pb-5 pt-2 justify-content-center mt-2">
-        My email is <a href="mailto:mail.rajanydv@gmail.com"
-            class="text-blue-300 underline">mail.rajanydv@gmail.com.</a><br>You are most
+        My email is <a href="mailto:{{site.email}}"
+            class="text-blue-300 underline">{{site.email}}</a>.<br>You are most
         welcome to connect with me.
     </div>
 </section>
@@ -75,8 +74,9 @@ layout: default
     <p class="bg-slate-700 opacity-75 border-y-4 border-slate-900 p-2 max-w-2xl rounded mx-auto text-md mt-2">
         I have used Jekyll to generate this site, tailwindCSS and sass for styling and I have used a few plugins
         to make this site work.
-        The website source is hosted on <a href="https://github.com/hatchedland/nuboard-theme"
-            target="_blank" class="text-blue-300">Github</a> and the site itself is deployed in <a href="https://www.cloudflare.com/" class="text-blue-300">cloudflare</a>.
+        The website source is hosted on <a href="https://github.com/" target="_blank"
+            class="text-blue-300">Github</a> and the site itself is deployed in <a href="https://www.cloudflare.com/"
+            class="text-blue-300">cloudflare</a>.
     </p>
     <div class="text-center pt-5 mb-3 text-xs opacity-50">
         This site was created by <a href="https://rajan.works/" target="_blank" class="text-blue-300">Rajan

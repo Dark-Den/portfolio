@@ -33,7 +33,7 @@ layout: default
         </li>
     <script>
         // fetching techstack
-        const getTechstack = () => {
+        const getTechstack = (n) => {
     
             const username = '{{ site.github_username }}';
             const repository = '{{ project.title }}';
@@ -50,15 +50,13 @@ layout: default
                     const sumValues = obj => Object.values(obj).reduce((a, b) => a + b);
                     const totalvalue = sumValues(data);
                     for (var languages in data) {
-                        console.log(languages)
                         // languages
                         if (data.hasOwnProperty(languages)) {
                             var value = data[languages];
-                            console.log(value)
                             const seekvalue = document.createElement('li');
                             // seekvalue width function
                             const seeklength = (value / totalvalue) *(seekbar.offsetWidth)/4;
-                            console.log(seeklength)
+                            
                             seekvalue.style.width = (`${seeklength}%`);
                             seekvalue.style.borderRadius = ('5px');
                             seekvalue.style.height = ('1.2em');
@@ -69,9 +67,17 @@ layout: default
                         }
                     }
                 })
-                .catch(err => alert('Error 403. Please Reload!'))
+                
+                .catch(function(error) {
+                    if (n === 1) return reject(error); // <--- base case!
+                    getTechstack(n - 1)
+                    .then(resolve)
+                    .catch(reject);
+                });
         }
-        getTechstack();
+
+        const n = 1;
+        getTechstack(n);
     
         // /fetching techstack
     </script>
