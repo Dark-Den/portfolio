@@ -5,7 +5,7 @@ description: "Post displaying the various ways of highlighting code in Markdown.
 # banner: "https://picsum.photos/700/300"
 tags: 
   - code
-  - syntax highlighting
+  - syntax-highlighting
 References: 
   - https://dummyurl.com/
   - https://dummyurl.com/
