@@ -2,7 +2,7 @@
 title: Guide to React
 date-published: 11/08/2000
 description: Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter
-banner: "https://picsum.photos/700/300"
+banner: 
 tags:
   - Javascript
   - Frontend
@@ -11,13 +11,12 @@ References:
   - https://dummyurl.com/
   - https://dummyurl.com/
 ---
-
-#### <u>Guide to React</u>
-# 1. [Object Structuring](#Object-structuring)
-# 2. [Binding](#binding) 
-# 3. [Super](#super)
-# 4. [setState()](#setstate)
-# 5. [batching](#batching)
+Table of Content
+  - [Object Structuring](#Object-structuring)
+  - [Binding](#binding) 
+  - [Super](#super)
+  - [setState()](#setstate)
+  - [batching](#batching)
 
 ---
 # Object Structuring
@@ -26,8 +25,9 @@ importing multiple state variables in inside the render method of the component
 const {var1, var2, var4} = this.state
 ```
 So that we don't need to write  this
+
 ```jsx
-{{ this.state.var1}}
+{ this.state.var1 }
 ```
 everytime to access the state variable
 
@@ -73,7 +73,7 @@ Like this
 this.function = this.function.bind(this);
 ```
 
-> **__NOTE__** "Binding can be avoided if we are using arrow functions."
+> **_NOTE:_** Binding can be avoided if we are using arrow functions.
 
 ---
 # Super

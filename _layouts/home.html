@@ -10,7 +10,7 @@ layout: default
 		</div>
 	</div>
 	<div class="flex gap-8 flex-wrap w-full py-5">
-		<div class="grow rounded">
+		<div class="grow rounded min-w-[25vw]">
 			<h2 class="text-lg text-center bg-slate-700 shadow-inner rounded" id="heading">Recent Posts</h2>
 			<div class="list-group">
 				{% for posts in site.blog limit:3 %}
@@ -25,7 +25,7 @@ layout: default
 					<ul class="list-unstyled flex flex-wrap pt-1 gap-2">
 						{% for tag in posts.tags %}
 						<li>
-							<a href="#"
+							<a href={{ site.baseurl | append: "/blog/tags/" | append: tag | append: "/" }}
 								class="border border-gray-500 px-2 flex gap-1 items-center rounded-full rounded-full opacity-50 hover:opacity-100 hover:bg-slate-500 hover:text-slate-900">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
 									stroke="currentColor" class="w-5 h-5">
@@ -48,7 +48,7 @@ layout: default
 			<div class="text-center bg-slate-700 shadow-inner w-full"><a href="{{site.url}}/blog/"
 					class="no-underline">View all</a></div>
 		</div>
-		<div class="grow rounded">
+		<div class="grow rounded min-w-[25vw]">
 			<h2 class="text-lg text-center bg-slate-700 shadow-inner rounded" id="heading">New Episodes</h2>
 			<div class="list-group">
 				{% for podcast in site.podcasts limit:3 %}
@@ -58,24 +58,6 @@ layout: default
 					</a>
 					{% if podcast.description %}
 					<p class="mb-1 h-12 opacity-75">{{podcast.description | truncate: 90}}</p>
-					{% endif %}
-					{% if podcast.tags %}
-					<ul class="list-unstyled flex flex-wrap pt-1 gap-2">
-						{% for tag in podcast.tags %}
-						<li>
-							<a href="#"
-								class="border border-gray-500 px-2 flex gap-1 items-center rounded-full opacity-50 hover:opacity-100 hover:bg-slate-500 hover:text-slate-900">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
-									stroke="currentColor" class="w-5 h-5">
-									<path stroke-linecap="round" stroke-linejoin="round"
-										d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
-									<path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
-								</svg>
-								<div>{{tag}}</div>
-							</a>
-						</li>
-						{% endfor %}
-					</ul>
 					{% endif %}
 					{% if podcast.date_released %}
 					<small class="italic opacity-75">Posted on - {{podcast.date_released | date: "%b %d, %Y" }}</small>

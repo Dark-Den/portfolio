@@ -154,7 +154,7 @@
             json: [],
             success: Function.prototype,
             searchResultTemplate: (
-                '<div class="break-normal p-2 bg-slate-900 m-1 rounded"><a href="{url}" class="text-2xl" title="{desc}">> {title}</a><div class="opacity-50"><strong>Tags - </strong>{tags}</div></div>'
+                '<div class="text-left break-normal p-2 bg-slate-900 m-1 rounded"><a href="{url}" class="text-2xl text-blue-300 hover:underline" title="{desc}">> {title}</a><div class="opacity-50"><strong>Tags - </strong>{tags}</div></div>'
             ),
             templateMiddleware: Function.prototype,
             sortMiddleware: function () {

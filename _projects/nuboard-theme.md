@@ -1,7 +1,7 @@
 ---
 title: nuboard-theme # use github repo name
-description: "Foo Bar design system including logo mark, website design, and branding applications."
-banner: https://random.imagecdn.app/400/400
+description: "Nuboard is a free and open-source Jekyll theme with separate pages for showcasing your case studies, portfolio, and podcast."
+banner:
 sourcecode: https://github.com/hatchedland/nuboard-theme
 url: https://nuboard-theme.pages.dev/
 ---

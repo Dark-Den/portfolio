@@ -1,3 +1,4 @@
 ---
-layout: tags
+layout: alltags
+permalink: /blog/tags/
 ---
