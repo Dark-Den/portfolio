@@ -1,4 +1,7 @@
 # Nuboard-theme
+[![Gem](https://badgen.net/rubygems/v/nuboard-theme)](https://badgen.net/rubygems/v/nuboard-theme "View this project in Rubygems")
+[![Downloads](https://ruby-gem-downloads-badge.herokuapp.com/nuboard-theme)](https://rubygems.org/gems/nuboard-theme "Number of Gem downloads")
+---
 ![theme.gif](./theme.gif)
 
 [**Nuboard-theme**](https://nuboard-theme.pages.dev/) is a minimal, responsive, and powerful  Jekyll theme and is the best suite for your podcast, case study, and project showcase.
@@ -14,6 +17,10 @@ To use it, you must first have the latter dependencies installed.
 
 
 ## Installation
+```console
+gem install nuboard-theme
+```
+For the dependencies
 ```console
 bundle
 ```
