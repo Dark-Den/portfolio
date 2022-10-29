@@ -1,4 +1,5 @@
 # Nuboard-theme
+![theme.gif](./theme.gif)
 
 [**Nuboard-theme**](https://nuboard-theme.pages.dev/) is a minimal, responsive, and powerful  Jekyll theme and is the best suite for your podcast, case study, and project showcase.
 
