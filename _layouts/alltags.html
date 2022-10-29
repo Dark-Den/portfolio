@@ -12,9 +12,6 @@ layout: default
         <a class="tag-link text-2xl text-blue-300 hover:underline py-1" href={{ site.baseurl | append: "/blog/tags/" | append: tag_slug | append: "/" }} rel="category tag">
           {{ tag_slug }}
         </a>
-        <div class="opacity-75">
-          ({{ tag['count'] }})
-        </div>
       </li>
     {% endfor %}
   </ul>

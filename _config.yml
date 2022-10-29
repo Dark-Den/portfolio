@@ -35,13 +35,13 @@ toolkit:
 
 
 # socials
-twitter_username: hatchedland
+twitter_username: 
 github_username:  hatchedland
-trakt_tv_username: rajanydv
-lastfm_username: rajanyadav
-linkedin_username: rajanydv
-instagram_username: rajanydv_
-podbean_userid: user-R1vnlbi3jC2m
+trakt_tv_username: 
+lastfm_username: 
+linkedin_username: 
+instagram_username: 
+podbean_userid: 
 
 sass:
   sass_dir: _sass
