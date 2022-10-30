@@ -7,6 +7,8 @@ description: >-
 baseurl: ""
 url: ""
 
+about_me: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, adipisci eligendi cum nobis voluptatum delectus consectetur quisquam? Sit perferendis dicta tempore asperiores ex natus? Aperiam, odit rerum?"
+                
 podcast_title: "Hatchedland Spoils a Movie"
 podcast_description: "This podcast is here to take you deep into the depth some compelling stories, acting, direction, musical score, and other aspects of cinematography and what makes them stand out."
 podcast_banner: "https://i.postimg.cc/RhSCnp4h/podcast-cover.png"
